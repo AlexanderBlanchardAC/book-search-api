@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Gruppo', sans-serif;
+  overflow-y: scroll;
+}
+
+
+:root{
+  --primary-color:#E7D2CC;
+  --primary-color-light:#E2DED0;
+  --primary-color-dark:#647c90;
+  --secondary-color:#444444;
+  --secondary-color-light:#747474;
+  --secondary-color-dark:#0A0708;
+}
+
+body{
+  /* background-color: var(--primary-color-dark); */
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: var(--primary-color-dark);  
+} 
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 800px;
+  max-height: fit-content;
+  background-color: var(--primary-color-light);
+  border-radius: 7px;
+}
+
+
+
+
+
+
+
+.book-search {
+  margin: 10px;
+  padding: 5px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.each-book {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 600px;
+  gap: 10px;
+  /* margin: 20px 50px; */
+  text-align: center;
+  padding: 10px;
+  margin-top:20px;
+}
+
+
+
+.header-container {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: var(--primary-color-light);
+  background-image: url('./assets/coverImg.jpg');
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+ 
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 0 5px;
+  border: 2px solid var(--secondary-color-light);
+  color: var(--secondary-color-dark);
+  background-color: var(--primary-color-light);
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.search-btn {
+  padding: 10px;
+  width: 100px;
+  margin: 0 5px;
+  border: 2px solid var(--secondary-color-light);
+  border-radius: 7px;
+  background-color: var(--primary-color-light);
+  color: var(--secondary-color-dark);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.app-title {
+  
+  margin-bottom: 15px;
+}

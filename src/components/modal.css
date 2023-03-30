@@ -1,0 +1,134 @@
+
+.modal {
+    background-color:#478C5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.modal-image {
+    width: 180px;
+    height: 200px;
+}
+
+.modal-image-container {
+    border: 12px double #013A20;
+    height: 200px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-header {
+    width: 550px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 5px 0;
+}
+
+.modal-author {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 2px 0;
+}
+
+.modal-category {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.modal-body {
+   
+    padding: 5px;
+    width: 550px;
+    height: 350px;  
+    margin-bottom: 0;
+}
+
+.modal-book-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.info-left {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    padding: 5px;
+}
+
+.info-right {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.modal-additional-info {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid white; */
+}
+
+
+
+.modal-body-desc {
+    width: 550px;
+    padding: 5px;
+    height: 190px;
+    margin: 5px 0;
+}
+
+.desc {
+    height: 170px;
+    padding: 10px;
+    text-align: start;
+    font-size: 1.2rem;
+    /* border-left: 1px solid #CDD193;
+    border-right: 1px solid #CDD193; */
+    border: 5px groove #CDD193;
+}
+
+.modal-footer {
+    width: 550px;
+}
+
+.close-button {
+    width: 100px;
+    padding: 5px;
+    background-color: #CDD193;
+    color: #013A20;
+    outline: none;
+    border: 4px solid #013A20;
+    border-radius: 7px;
+    font-weight: bold;
+
+}
+

@@ -1,0 +1,35 @@
+
+.book-container {
+    border: 2px solid var(--secondary-color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    height: 130px;
+    background-color: var(--primary-color);
+    border-radius: 7px;
+}
+
+.book-title {
+    font-weight: bold;
+    color: var(--primary-color-dark);
+    font-size: 1rem;
+}
+
+.book-author {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.modal {
+  position: fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
