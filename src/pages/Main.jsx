@@ -71,17 +71,14 @@ const Main = () => {
                 <button className='search-btn' type="submit" onClick={handleSubmit}>Search</button>
             </div>
           </div>
-        {/* <div>
-          {searchedBook.map((item, index) => (
-            <BookCard searchedBook={item} key={index} />
-          ))}
-        </div> */}
-        {/* <div>By:{searchedBook[0].author}</div> */}
+       
         <div className='each-book'>
             {searchedBook.map((book, index) => (
                 <BookCard book={book} key={index} />
             ))}
         </div>
+       
+       
         
       
      
