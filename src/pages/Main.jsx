@@ -17,14 +17,11 @@ const Main = () => {
                         const response = await res.json()
                         const data = response.items
                         .map(book=>({
-                        //    title: response.items.map(({volumeInfo}) => volumeInfo.title),
-                        //    authors: response.itmes
+                        
                             title: book.volumeInfo.title,
                             author: book.volumeInfo.authors,
                             published: book.volumeInfo.publishedDate,
                             publisher: book.volumeInfo.publisher,
-                            ISBN_13: book.volumeInfo.industryIdentifiers ? book.volumeInfo.industryIdentifiers[0].identifier : null,
-                            ISBN_10: book.volumeInfo.industryIdentifiers ? book.volumeInfo.industryIdentifiers[1].identifier : null,
                             category: book.volumeInfo.categories,
                             price: book.saleInfo.retailPrice,
                             ebook: book.saleInfo.isEbook,

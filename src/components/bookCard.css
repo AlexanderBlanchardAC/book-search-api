@@ -8,6 +8,7 @@
     height: 130px;
     background-color: var(--primary-color);
     border-radius: 7px;
+    cursor: pointer;
 }
 
 .book-title {

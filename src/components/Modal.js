@@ -4,7 +4,7 @@ import './modal.css';
 
 const Modal = ({ show, onClose, book }) => {
 
-    const { id, title, author, publisher, category, published, price, ebook, blurb, link, ISBN_13, ISBN_10 } = book;
+    const { id, title, author, publisher, category, published, price, ebook, blurb, link } = book;
    
     if (!show) {
         return null;
@@ -27,13 +27,10 @@ const Modal = ({ show, onClose, book }) => {
             <div className='modal-body'>
                 <div className="modal-book-info">
                     <div className="info-left">
-                        {publisher !== undefined ? ( <p><span className="bold">Publised by:</span> {publisher}</p> ):( <p><span className="bold">Published by:</span> Unknown</p>)}
+                        {publisher !== undefined ? (<p><span className="bold">Published by:</span> {publisher}</p> ):( <p><span className="bold">Published by:</span> Unknown</p>)}
                         <p><span className="bold">Date of Publication:</span> {published} </p>
                     </div>
-                    <div className="info-right">
-                        {ISBN_10 !== null ? (<p>ISBN-10: {ISBN_10}</p>) : (null)}
-                        {ISBN_13 !== null ? (<p>ISBN-13: {ISBN_13}</p>) : (null)}
-                    </div>
+                
                 </div>
                     
                 
