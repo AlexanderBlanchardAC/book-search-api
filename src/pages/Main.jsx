@@ -70,14 +70,14 @@ const Main = () => {
                 <input className='search-input' type="text" onInput={handleChange} id="searchInput" placeholder='Title, Author or Key Word'/>
                 <button className='search-btn' type="submit" onClick={handleSubmit}>Search</button>
             </div>
-          </div>
-       {searchedBook > 0 ? (
+        </div>
+       
         <div className='each-book'>
             {searchedBook.map((book, index) => (
                 <BookCard book={book} key={index} />
             ))}
         </div>
-       ): (<div></div>)}
+       
        
        
         
