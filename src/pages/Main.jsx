@@ -71,12 +71,13 @@ const Main = () => {
                 <button className='search-btn' type="submit" onClick={handleSubmit}>Search</button>
             </div>
           </div>
-       
+       {searchedBook > 0 ? (
         <div className='each-book'>
             {searchedBook.map((book, index) => (
                 <BookCard book={book} key={index} />
             ))}
         </div>
+       ): (<div></div>)}
        
        
         
