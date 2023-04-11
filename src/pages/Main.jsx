@@ -73,9 +73,9 @@ const Main = () => {
         </div>
        
         <div className='each-book'>
-            {searchedBook.map((book, index) => (
-                <BookCard book={book} key={index} />
-            ))}
+            {searchedBook.map((book, index) => 
+             <BookCard book={book} key={index} />
+            )}
         </div>
        
        
